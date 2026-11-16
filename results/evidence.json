@@ -1,0 +1,91 @@
+{
+  "parameters": {
+    "R": 0.8,
+    "L": 0.0012,
+    "Kt": 0.085,
+    "Ke": 0.085,
+    "J": 0.00042,
+    "b": 0.00015,
+    "N": 100.0,
+    "Vmax": 48.0,
+    "Imax": 8.0,
+    "Ts": 0.002,
+    "tau_load": 0.25,
+    "omega_critical": 450.0
+  },
+  "A": [
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      -0.3571428571428571,
+      202.38095238095238
+    ],
+    [
+      0.0,
+      -70.83333333333334,
+      -666.6666666666667
+    ]
+  ],
+  "B": [
+    [
+      0.0
+    ],
+    [
+      0.0
+    ],
+    [
+      833.3333333333334
+    ]
+  ],
+  "C": [
+    [
+      1.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "D": [
+    [
+      0.0
+    ]
+  ],
+  "eigenvalues": [
+    "0j",
+    "(-22.615172840353125+0j)",
+    "(-644.4086366834565+0j)"
+  ],
+  "tau_electrical_s": 0.0014999999999999998,
+  "tau_mechanical_s": 2.8000000000000003,
+  "controllability_rank": 3,
+  "observability_rank": 3,
+  "operating_point": {
+    "current_A": 3.7352941176470584,
+    "voltage_V": 41.23823529411764,
+    "current_margin_A": 4.264705882352942,
+    "voltage_margin_V": 6.7617647058823565
+  },
+  "deadline_max_ms": 24,
+  "deadline_all_pass": true,
+  "step_overshoot_percent": 6.181039130516236,
+  "settling_time_s": 0.07,
+  "max_voltage_step": 16.0,
+  "sil_max_abs_error": 2.3841784668743315e-06,
+  "sil_backend": "native_c",
+  "sil_float32_epsilon": 1.1920928955078125e-07,
+  "covered_states": [
+    "MOVING",
+    "SAFE_STOP_PENDING",
+    "SAFE_STOP",
+    "ACK_REQUIRED"
+  ],
+  "covered_transitions": [
+    "MOVING->SAFE_STOP_PENDING",
+    "SAFE_STOP_PENDING->SAFE_STOP",
+    "SAFE_STOP->ACK_REQUIRED",
+    "ACK_REQUIRED->MOVING"
+  ]
+}

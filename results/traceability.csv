@@ -1,0 +1,9 @@
+requirement,model,code,test
+REQ-CTRL-AA-001,Modelo + PID,controller.py,step_response
+REQ-CTRL-AA-002,Simulação fechada,run_all.py,step_response
+REQ-CTRL-AA-003,Simulação fechada,run_all.py,settling_time
+REQ-CTRL-AA-004,Saturação/anti-windup,controller.py,saturation_test
+REQ-SAFE-AA-001,Supervisor + atraso,safety.py,deadline_cases.csv
+REQ-SAFE-AA-002,Supervisor,safety.py,supervisor_transition_test
+REQ-SAFE-AA-003,Supervisor,safety.py,resume_transition_test
+REQ-SAFE-AA-004,Limite de velocidade,plant.py,speed_limit_test
